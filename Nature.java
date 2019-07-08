@@ -35,17 +35,17 @@ public class Nature {
 
 	        eyeCherry.takeOff();
 
-	        eyeCherry.Flyascend(120);
+	        eyeCherry.ascend(120);
 
-	        eyeCherry.Flyascend(150);
+	        eyeCherry.ascend(150);
 
 	        eyeCherry.glide();
 
-	        eyeCherry.Flydescend(10);
+	        eyeCherry.descend(10);
 
 	        eyeCherry.land();
 
-	        eyeCherry.Flydescend(1);
+	        eyeCherry.descend(1);
 
 	        eyeCherry.land();
 

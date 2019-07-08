@@ -64,17 +64,4 @@
 			    public abstract String sing();
 		
 		
-		
-				public int Flyascend(int meters) {
-					// TODO Auto-generated method stub
-					return 0;
-				}
-		
-		
-		
-				public int Flydescend(int meters) {
-					// TODO Auto-generated method stub
-					return 0;
-				}
-		
 		}

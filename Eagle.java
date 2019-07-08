@@ -85,7 +85,7 @@
 	    public void takeOff() {
 	        if (!this.flying && this.altitude == 0) {
 	            this.flying = true;
-	            System.out.printf("%s takeoff into the air.%n", this.getName());
+	            System.out.printf("%s  takeoff into the sky.%n", this.getName());
 	        }
 	    }
 	
@@ -95,27 +95,15 @@
 	     * @return altitude
 	     */
 	    @Override
-	    public int Flyascend(int meters) {
+	    public int ascend(int meters) {
 	        if (this.flying) {
-	            this.altitude = Math.min(this.altitude + meters, 325);
-	            System.out.printf("%s fly downward, altitude : %d%n", this.getName(), this.altitude);
+	            this.altitude = Math.min(this.altitude + meters, 3200);
+	            System.out.printf("%s flies upware, altitude : %d%n", this.getName(), this.altitude);
 	        }
 	        return this.altitude;
 	    }
 	
-	    /**
-	     * fly descend
-	     * @param meters altitude decrease
-	     * @return altitude
-	     */
-	    @Override
-	    public int Flydescend(int meters) {
-	        if (this.flying) {
-	            this.altitude = Math.max(this.altitude - meters, 0);
-	            System.out.printf("%s fly upward, altitude : %d%n", this.getName(), this.altitude);
-	        }
-	        return this.altitude;
-	    }
+	   
 	
 	    /**
 	     * get out of sky, must be on water
@@ -125,20 +113,26 @@
 	        if (this.flying && this.altitude == 0) {
 	            System.out.printf("%s gets out of the air.%n", this.getName());
 	        } else {
-	            System.out.printf("%s is too deep, it can't get out.%n", this.getName());
+	            System.out.printf("%s is too high, it can't get out.%n", this.getName());
 	        }
 	    }
 	
-		@Override
-		public int ascend(int meters) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
+
 	
-		@Override
-		public int descend(int meters) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
+	    /**
+	     * fly descend
+	     * @param meters altitude decrease
+	     * @return altitude
+	     */
+	    @Override
+	    public int descend(int meters) {
+	        if (this.flying) {
+	            this.altitude = Math.max(this.altitude - meters, 0);
+	            System.out.printf("%s flies downward, altitude : %d%n", this.getName(), this.altitude);
+	        }
+	        return this.altitude;
+	    }
+
+		
 	
 	}
