@@ -7,7 +7,7 @@
 	        private boolean flying;
 	
 	        private int altitude;
-	        private String name;
+	       // private String name;
 	        
 	        public Eagle(String name) {
 	
@@ -19,9 +19,9 @@
 	
 	        }
 	        
-	        public String getName() {    // getters et setters
+	        /*public String getName() {    // getters et setters
 	
-	            return this.name;  
+	          *  return this.name;  
 	
 	        }  
 	
@@ -32,6 +32,7 @@
 	            this.name = name;  
 	
 	        } 
+	        */
 	
 	        public int getAltitude() {
 	
