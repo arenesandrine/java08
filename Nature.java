@@ -45,7 +45,7 @@ public class Nature {
 
 	        eyeCherry.land();
 
-	        eyeCherry.Flydescend(9);
+	        eyeCherry.Flydescend(1);
 
 	        eyeCherry.land();
 
