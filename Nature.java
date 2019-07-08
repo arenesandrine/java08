@@ -27,7 +27,7 @@ public class Nature {
 
 
 
-	        Eagle1 eyeCherry = new Eagle1("Eye Cherry");
+	        Eagle eyeCherry = new Eagle("Eye Cherry");
 
 	        // TODO : décommente le code suivant afin de le tester
 
